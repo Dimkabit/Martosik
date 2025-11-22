@@ -1,24 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
+		<link rel="preload" as="image" href="./assets/img/04.webp" type="image/webp">
+		<link rel="preload" as="image" href="./assets/img/04-600.webp" type="image/webp">
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700,800,900,300italic,italic&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<meta name="keywords" content="стилист Брест, персональный шопер услуги, гардероб консультация, образ для мероприятия, стиль одежды, модные тренды, подбор одежды, шопинг сопровождение, капсульный гардероб сезонный, разбор гардероба цена, мужской стилист, VIP шопинг, телеграм стилист, Marina Stsiopina">
 		<meta name="description" content="MARINA STSIoPINA - ваш личный стилист и персональный шопер. Профессиональные услуги: разбор гардероба, шопинг-сопровождение, создание сезонных капсульных гардеробов, мужской стиль и VIP шопинг. Помогаем раскрыть вашу индивидуальность через одежду.">
 		<title>MARINA STSIoPINA персональный шопер</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1763583138088"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763583138088">
+		<link rel="stylesheet" href="fancybox/fancybox.min.css?_v=1763785104733" >
+		
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1763785104733"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763785104733">
+		
 	</head>
 	<body>
 		<div class="wrapper">
 			<main class="page page--home">
 				<div class="bg-image">
 					<picture>
-						<source media="(max-width: 600px)" srcset="./assets/img/04-600.webp" type="image/webp">
-						<img alt="Image" src="./assets/img/04.webp">
+						<source media="(max-width: 600px)" srcset="./assets/img/04-600.webp" type="image/webp" loading="eager">
+						<img alt="Image" src="./assets/img/04.webp" loading="eager">
 					</picture>
 				</div>
 				<div class="page__container">
@@ -27,7 +32,7 @@
 						<div class="left-column">
 							<section class="profile">
 								<div class="header__menu menu">
-									<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+									<button type="button" data-fls-menu="" class="menu__icon icon-menu" aria-label="меню">
 										<span></span>
 									</button>
 									<nav class="menu__body">
@@ -52,9 +57,9 @@
 								</h1>
 								<div class="profile-photo-block">
 									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/2-600.avif" type="image/avif">
-										<source media="(max-width: 1200px)" srcset="./assets/img/2-1200.avif" type="image/avif">
-										<img loading="eager" alt="Марина" class="profile-photo" src="./assets/img/2.avif">
+										<source media="(max-width: 600px)" srcset="./assets/img/2-600.avif" type="image/avif" >
+										<source media="(max-width: 1200px)" srcset="./assets/img/2-1200.avif" type="image/avif" >
+										<img loading="eager" alt="Марина" class="profile-photo" src="./assets/img/2.avif" loading="eager">
 									</picture>
 								</div>
 								<p class="quote">Вместе мы сделаем так, чтобы твой гардероб начал работать на тебя</p>
@@ -87,8 +92,8 @@
 									</div>
 									<div class="about-content-image">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/about-600.webp" type="image/webp">
-											<source media="(max-width: 1200px)" srcset="./assets/img/about-1200.webp" type="image/webp">
+											<source media="(max-width: 600px)" srcset="./assets/img/about-600.webp" type="image/webp" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/about-1200.webp" type="image/webp" >
 											<img alt="Обо мне" loading="eager" class="about-photo" src="./assets/img/about.webp">
 										</picture>
 									</div>
@@ -129,88 +134,88 @@
 								<h2 class="section-title">PORTFOLIO</h2>
 								<div class="portfolio-grid">
 									<!-- 9 изображений -->
-									<a href="./assets/img/p1.avif">
+									<a data-fancybox="gallery" href="./assets/img/p1.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p1-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p1-1200.avif" type="image/avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p1-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p1-1200.avif" type="image/avif" >
 											<img alt="Портфолио 1" loading="eager" class="portfolio-item" src="./assets/img/p1.avif">
 										</picture>
 									</a>
-									<a href="./assets/img/p2.avif">
+									<a data-fancybox="gallery" href="./assets/img/p2.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p2-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p2-1200.avif" type="image/avif">
-											<img alt="Портфолио 2" loading="eager" class="portfolio-item" src="./assets/img/p2.avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p2-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p2-1200.avif" type="image/avif" >
+											<img alt="Портфолио 2" loading="eager" class="portfolio-item" src="./assets/img/p2.avif" >
 										</picture>
 									</a>
-									<a href="./assets/img/p3.avif">
+									<a data-fancybox="gallery" href="./assets/img/p3.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p3-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p3-1200.avif" type="image/avif">
-											<img alt="Портфолио 3" loading="eager" class="portfolio-item" src="./assets/img/p3.avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p3-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p3-1200.avif" type="image/avif" >
+											<img alt="Портфолио 3" loading="eager" class="portfolio-item" src="./assets/img/p3.avif" >
 										</picture>
 									</a>
-									<a href="./assets/img/p4.avif">
+									<a data-fancybox="gallery" href="./assets/img/p4.avif">
 										<picture>
 											<source media="(max-width: 600px)" srcset="./assets/img/p4-600.avif" type="image/avif">
 											<source media="(max-width: 1200px)" srcset="./assets/img/p4-1200.avif" type="image/avif">
 											<img alt="Портфолио 4" loading="eager" class="portfolio-item" src="./assets/img/p4.avif">
 										</picture>
 									</a>
-									<a href="./assets/img/p5.avif">
+									<a data-fancybox="gallery" href="./assets/img/p5.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p5-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p5-1200.avif" type="image/avif">
-											<img alt="Портфолио 5" loading="eager" class="portfolio-item" src="./assets/img/p5.avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p5-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p5-1200.avif" type="image/avif" >
+											<img alt="Портфолио 5" loading="eager" class="portfolio-item" src="./assets/img/p5.avif" >
 										</picture>
 									</a>
-									<a href="./assets/img/p6.avif">
+									<a data-fancybox="gallery" href="./assets/img/p6.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p6-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p6-1200.avif" type="image/avif">
-											<img alt="Портфолио 6" loading="eager" class="portfolio-item" src="./assets/img/p6.avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p6-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p6-1200.avif" type="image/avif" >
+											<img alt="Портфолио 6" loading="eager" class="portfolio-item" src="./assets/img/p6.avif" >
 										</picture>
 									</a>
-									<a href="./assets/img/p7.avif">
+									<a data-fancybox="gallery" href="./assets/img/p7.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p7-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p7-1200.avif" type="image/avif">
-											<img alt="Портфолио 7" loading="eager" class="portfolio-item" src="./assets/img/p7.avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p7-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p7-1200.avif" type="image/avif" >
+											<img alt="Портфолио 7" loading="eager" class="portfolio-item" src="./assets/img/p7.avif" >
 										</picture>
 									</a>
-									<a href="./assets/img/p8.avif">
+									<a data-fancybox="gallery" href="./assets/img/p8.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p8-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p8-1200.avif" type="image/avif">
-											<img alt="Портфолио 8" loading="eager" class="portfolio-item" src="./assets/img/p8.avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p8-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p8-1200.avif" type="image/avif" >
+											<img alt="Портфолио 8" loading="eager" class="portfolio-item" src="./assets/img/p8.avif" >
 										</picture>
 									</a>
-									<a href="./assets/img/p9.avif">
+									<a data-fancybox="gallery" href="./assets/img/p9.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p9-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p9-1200.avif" type="image/avif">
-											<img alt="Портфолио 9" loading="eager" class="portfolio-item" src="./assets/img/p9.avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p9-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p9-1200.avif" type="image/avif" >
+											<img alt="Портфолио 9" loading="eager" class="portfolio-item" src="./assets/img/p9.avif" >
 										</picture>
 									</a>
-									<a href="./assets/img/p10.avif">
+									<a data-fancybox="gallery" href="./assets/img/p10.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p10-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p10-1200.avif" type="image/avif">
-											<img alt="Портфолио 10" loading="eager" class="portfolio-item" src="./assets/img/p10.avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p10-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p10-1200.avif" type="image/avif" >
+											<img alt="Портфолио 10" loading="eager" class="portfolio-item" src="./assets/img/p10.avif" >
 										</picture>
 									</a>
-									<a href="./assets/img/p11.avif">
+									<a data-fancybox="gallery" href="./assets/img/p11.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p11-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p11-1200.avif" type="image/avif">
-											<img alt="Портфолио 11" loading="eager" class="portfolio-item" src="./assets/img/p11.avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p11-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p11-1200.avif" type="image/avif" >
+											<img alt="Портфолио 11" loading="eager" class="portfolio-item" src="./assets/img/p11.avif" >
 										</picture>
 									</a>
-									<a href="./assets/img/p2.avif">
+									<a data-fancybox="gallery" href="./assets/img/p2.avif">
 										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/p2-600.avif" type="image/avif">
-											<source media="(max-width: 1200px)" srcset="./assets/img/p2-1200.avif" type="image/avif">
-											<img alt="Портфолио 12" loading="eager" class="portfolio-item" src="./assets/img/p2.avif">
+											<source media="(max-width: 600px)" srcset="./assets/img/p2-600.avif" type="image/avif" >
+											<source media="(max-width: 1200px)" srcset="./assets/img/p2-1200.avif" type="image/avif" >
+											<img alt="Портфолио 12" loading="eager" class="portfolio-item" src="./assets/img/p2.avif" >
 										</picture>
 									</a>
 								</div>
@@ -320,5 +325,19 @@
 				</div>
 			</main>
 		</div>
+		<a data-fls-scrollup="" href="#" class="scroll-up">
+			<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48">
+				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m13 30l12-12l12 12"></path>
+			</svg>
+		</a>
+		<script crossorigin src="fancybox/fancybox.min.js?_v=1763785104733"></script>
+		<script>
+			Fancybox.bind("[data-fancybox='gallery']", {
+				groupAll: true,
+				Thumbs: {
+					type: "classic",
+				},
+			});
+		</script>
 	</body>
 </html>

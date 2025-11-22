@@ -201,3 +201,17 @@ class DynamicAdapt {
 if (document.querySelector("[data-fls-dynamic]")) {
   window.addEventListener("load", () => new DynamicAdapt());
 }
+const scrollUp = () => {
+  const scrollUp2 = document.querySelector(".scroll-up");
+  if (scrollUp2) {
+    if (window.scrollY >= 350) {
+      scrollUp2.classList.add("show-scroll");
+    } else {
+      scrollUp2.classList.remove("show-scroll");
+      document.querySelectorAll(".info-page__list-item").forEach((item) => {
+        item.classList.toggle("_active", item.getAttribute("data-scroll-to") === "first");
+      });
+    }
+  }
+};
+window.addEventListener("scroll", scrollUp);
